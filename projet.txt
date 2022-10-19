@@ -1,0 +1,19 @@
+couleur bleu: #58186222
+
+###Rôles###
+Simon:
+-newsletter
+-a propos (fonctionnalités actuelles, prochaines fonctionnalités...)
+-logo
+
+Jules:
+-accueil
+-avis
+-faire pop-up prévention sur page accueil (jules)
+
+Antonin
+-conseils de recettes
+
+Maxime:
+-découvertes
+-liste perso (partie compte)
