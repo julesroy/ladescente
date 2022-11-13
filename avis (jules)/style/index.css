@@ -19,20 +19,60 @@ header{
     display: flex;
     justify-content: space-between;
     height: 10vh;
+    padding-right: 3%;
+    padding-left: 3%;
 }
-header > a{
+
+header > p, a{
     color: white;
     text-decoration: none;
+    padding-top: 3.5vh;
 }
 
 nav{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: grid;
+    grid-template-areas: "recette    recette decouverte"
+                         "newsletter avis    apropos";
+    text-align: center;
+}
+
+.recettes{
+    grid-area: recette;
+}
+
+.decouverte{
+    grid-area: decouverte;
+}
+
+.avis{
+    grid-area: avis;
+}
+
+.newsletter{
+    grid-area: newsletter;
+}
+
+.a_propos{
+    grid-area: apropos;
 }
 
 nav > a{
     color: black;
     text-decoration: none;
+}
+
+@media only screen and (600px<=width) {
+    /* tablette
+    */
+}
+
+@media only screen and (768px<=width) {
+    /* ordinateur
+    */
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
