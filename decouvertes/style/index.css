@@ -68,6 +68,79 @@ nav > a{
     position: relative; 
 }
 
+#content{ /* On démarre le style de cette page avec le placement du conteneur global de cette page */
+    top: 25px;    
+    position: relative ;    
+}
+
+#content .titre{    /* style du titre de cette page */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color:#afcfd9 ;
+}   
+
+#content .description{
+    font-size: smaller;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 65px;
+}
+
+
+
+#content .post{   /* style du block qui va contenir toutes les recettes */
+    border-style: solid;
+    border-color: black;
+        
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    right: 15%;    /* on centre le block sur la page */
+    top: 125px;   
+     
+}
+/* mise en forme des conteneurs pour chaque cocktail*/
+.Cocktail{
+    display: flex; 
+    flex-direction: row;  /* pour que les ingrédients soient positionnés à côté de l'image*/
+    flex-wrap: nowrap;   
+    margin-bottom: 70px;
+    position: relative; /* pour que le nom du cocktail puisse se placer en position absolute et se superposer à l'image*/
+}
+
+/*fin mise en forme des conteneurs pour chaque cocktail */
+
+
+
+
+.a{
+    width: 50% ; /* L'image occupe la moitié du conteneur "cocktail"*/
+    
+}
+
+
+.ingrédients{
+    width: 50%;  /* les ingrédients occupent la moitié du conteneur "cocktail" */   
+}
+
+ul{
+    margin-bottom: 30px;
+}
+
+
+.nom{
+    display: block;
+    position: absolute;  /* position absolute pour superposer le titre à l'image */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    top: 30px; /* décalage par rapport au haut de l'image */
+}
+
+
+
+
 @media only screen and (600px<=width) {
     /* tablette
     */
