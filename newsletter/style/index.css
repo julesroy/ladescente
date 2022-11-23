@@ -158,3 +158,13 @@ nav > a{
     flex-direction: column;
     padding-top: 5vh;
 }
+fieldset{
+    border: 2px solid #afcfd9 ;
+    border-radius: 10px;
+    padding: 1vw;
+}
+legend{
+    color: black;
+    font-size: 1.5vw;
+    text-align: center;
+}

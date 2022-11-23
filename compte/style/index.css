@@ -68,6 +68,73 @@ nav > a{
     position: relative; 
 }
 
+.formLetter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5vh;
+}
+
+fieldset{
+    padding: 1%;
+    margin: 1%;
+    border: 2px solid #afcfd9 ;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.formLetter #prenom,#nom,#courriel,#start,#start{
+    height: 2vw;
+}
+.formLetter #prenom,#nom{
+    width: 10vw;
+}
+.formLetter #courriel{
+    width: 15vw;
+}
+.formLetter #start{
+    width: 7vw;
+}
+.signupbtn {
+    background-color:black;
+    color: white;
+    padding: 0.4vh;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 5px;
+}
+.signupbtn:active {
+    opacity: 0.5;
+    color: white;
+}
+.formLetter > label{
+    position: relative;
+    left: 35%;
+}
+.background{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn > a{
+    color: black;
+    text-decoration: none;
+    padding: 0.5vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0.5vw;
+}
+
 @media only screen and (600px<=width) {
     /* tablette
     */
