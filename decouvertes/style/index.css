@@ -65,12 +65,14 @@ nav{
 nav > a{
     color: black;
     text-decoration: none;
-    position: relative; 
+    position: relative;
+     
 }
 
 #content{ /* On démarre le style de cette page avec le placement du conteneur global de cette page */
     top: 25px;    
     position: relative ;    
+    
 }
 
 #content .titre{    /* style du titre de cette page */
@@ -93,40 +95,42 @@ nav > a{
 #content .post{   /* style du block qui va contenir toutes les recettes */
     border-style: solid;
     border-color: black;
-        
+    border-radius: 10px;
     position: absolute;
-    width: 70%;
-    left: 15%;
-    right: 15%;    /* on centre le block sur la page */
-    top: 125px;   
-     
+    width: 80%;
+    left: 10%;
+    right: 10%;    /* on centre le block sur la page */
+    top: 25vh;     
+    
 }
 /* mise en forme des conteneurs pour chaque cocktail*/
 .Cocktail{
     display: flex; 
-    flex-direction: row;  /* pour que les ingrédients soient positionnés à côté de l'image*/
+    flex-direction: column;  /* pour que les ingrédients soient positionnés en-dessous de l'image*/
     flex-wrap: nowrap;   
     margin-bottom: 70px;
     position: relative; /* pour que le nom du cocktail puisse se placer en position absolute et se superposer à l'image*/
+    
 }
 
 /*fin mise en forme des conteneurs pour chaque cocktail */
 
-
-
-
 .a{
-    width: 50% ; /* L'image occupe la moitié du conteneur "cocktail"*/
+    width: 100%; /* on prend toute la largeur du block parent*/
+}
+
+.Genevria{ /* style propre à la recette du genevria pour pouvoir ajouter un arrondi */
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
     
 }
 
 
-.ingrédients{
-    width: 50%;  /* les ingrédients occupent la moitié du conteneur "cocktail" */   
-}
-
 ul{
-    margin-bottom: 30px;
+    margin-bottom: 10px;  /* écart entre les 2 listes de chaque cocktail */
+    margin-top: 10px;
+    padding-left: 10%;
+    
 }
 
 
@@ -137,6 +141,9 @@ ul{
     color: white;
     top: 30px; /* décalage par rapport au haut de l'image */
 }
+
+
+
 
 
 
@@ -172,6 +179,7 @@ ul{
             width: 0%;
         }
     }
+
 }
 
 @media only screen and (768px<=width) {
@@ -180,5 +188,37 @@ ul{
     nav{
         display: flex;
         justify-content: space-evenly;
+    }
+    #content .post{   /* style du block qui va contenir toutes les recettes */
+        border-style: solid;
+        border-color: black;
+            
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        right: 25%;    /* on centre le block sur la page */
+        top: 125px;   
+        
+    }
+    .Cocktail{
+        display: flex; 
+        flex-direction: row;  /* pour que les ingrédients soient positionnés à côté de l'image*/
+        margin-bottom: 70px;
+        position: relative; /* pour que le nom du cocktail puisse se placer en position absolute et se superposer à l'image*/
+
+    }
+    
+
+    .image{
+        width: 50vh;
+        padding-right: 1vh;
+    }
+     .ingredients{
+        width: 50vh;
+
+     }  
+    .Genevria{      /* style propre à la recette du genevria pour pouvoir ajouter un arrondi */
+        width: 50vh;
+        border-radius: 5px 0px 0px 0px;
     }
 }

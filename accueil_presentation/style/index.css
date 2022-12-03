@@ -68,6 +68,58 @@ nav > a{
     position: relative; 
 }
 
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "txt1 img1"
+                         "img2 txt2"
+                         "txt3 img3";
+}
+
+.txt1{
+    grid-area: txt1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1{
+    grid-area: img1;
+    padding-top: 3%;
+    width: 30vh;
+    height: auto;
+    align-items: center;
+}
+
+.txt2{
+    grid-area: txt2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img2{
+    grid-area: img2;
+    width: auto;
+    height: 40vh;
+    padding-left: 10%;
+}
+
+.txt3{
+    grid-area: txt3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img3{
+    grid-area: img3;
+    width: 30vh;
+    height: auto;
+}
+
 @media only screen and (600px<=width) {
     /* tablette
     */
@@ -99,12 +151,7 @@ nav > a{
             width: 0%;
         }
     }
-.legende{
-    font-size: 1.5em;
-    text-align: center;
 }
-}
-
 
 @media only screen and (768px<=width) {
     /* ordinateur
@@ -113,64 +160,4 @@ nav > a{
         display: flex;
         justify-content: space-evenly;
     }
-    .legende{
-        font-size: 1.5em;
-        text-align: center;
-    }
-    .formLetter #prenom,#nom,#courriel,#start{
-        height: 2vw;
-    }
-    .formLetter #prenom,#nom{
-        width: 10vw;
-    }
-    .formLetter #courriel{
-        width: 15vw;
-    }
-    .formLetter #start{
-        width: 7vw;
-    }
-}
-.formLetter{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 5vh;
-}
-.signupbtn {
-    background-color:black;
-    color: white;
-    padding: 0.4vw 0.5vh;
-    cursor: pointer;
-    width: 25%;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.signupbtn:active {
-    opacity: 0.5;
-    color: white;
-}
-.formLetter > label{
-    position: relative;
-    left: 35%;
-}
-.background{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 5vh;
-}
-fieldset{
-    border: 2px solid #afcfd9 ;
-    border-radius: 10px;
-    padding: 1vw;
 }
