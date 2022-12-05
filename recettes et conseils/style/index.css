@@ -25,7 +25,7 @@ header{
     align-items: center; /*on centre les éléments verticalement dans le header*/
 }
 
-header > p, header > a{
+header > a{
     color: white;
     text-decoration: none;
     backdrop-filter: blur(5px);
@@ -67,7 +67,108 @@ nav > a{
     text-decoration: none;
     position: relative; 
 }
+body{
+    text-align: center;
+    margin: 3%;
+}
+.type{
+    font-size:24px;
 
+}
+
+.prepost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post{   
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    width: 70%;
+    border-radius: 10px;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin: 3%;
+    background-color: #afcfd9;
+} 
+.titre{
+    font-size: 30px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ingredient{
+    font-size: 15px;
+    flex-direction: row;  
+    flex-wrap: nowrap;   
+    margin-bottom: 70px;
+    list-style: none;
+    margin: 3%;
+}
+.descript{
+    flex-direction: row;  
+    flex-wrap: nowrap;  
+    left: 30%;
+    top: 10%; 
+    text-align: center;
+}
+
+.img{
+    height: 40vh;
+    width: 40vw;
+}
+.preparation{
+    text-align: left;
+    margin-top: 2%;
+}
+.preparation>p{
+    line-height: 5%;
+    text-align: left;
+}
+.conseil{
+    font-weight: bold;
+}
+.type>p{
+    margin: 10%;
+}
+
+#butterynipple{
+    height: 90%;
+}
+#peanutbutterjelly{
+    height: 90%;
+}
+#melonball{
+    height: 90%;
+}
+#washingtonapple{
+    height: 90%;
+}
+#nuttyirishman{
+    height: 90%;
+}
+#Sexonthebeach{
+    height: 30%;
+}
+#gingembre{
+    height: 80%;
+}
+#mangue{
+    height: 80%;
+}
+#cafe{
+    height: 80%;
+}
+#manguepassion{
+    height: 30%;
+}
+#myrtille{
+    height: 30%;
+}
 @media only screen and (600px<=width) {
     /* tablette
     */
@@ -107,5 +208,44 @@ nav > a{
     nav{
         display: flex;
         justify-content: space-evenly;
+    }
+    #pelco{
+        width: 30%;
+    }
+    #citronvert{
+        width: 30%;
+    }
+    #gingerbeer{
+        width: 25%;
+    }
+    #Mojito{
+        width: 30%;
+    }
+    #Aperol{
+        width: 30%;
+    }
+    #pinacolada{
+        width: 50%;
+    }
+    #Margarita{
+        width: 30%;
+    }
+    #Sexonthebeach{
+        width: 20%;
+    }
+    #gingembre{
+        width: 30%;
+    }
+    #mangue{
+        width: 30%;
+    }
+    #cafe{
+        width: 30%;
+    }
+    #manguepassion{
+        width: 30%;
+    }
+    #myrtille{
+        width: 30%;
     }
 }
