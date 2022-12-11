@@ -130,6 +130,10 @@ body{
     height: auto;
 }
 
+.rhum_liste > li{
+    padding-bottom: 5%;
+}
+
 #ent > a{
     text-decoration: none;
     color: black;
@@ -186,5 +190,9 @@ body{
     nav{
         display: flex;
         justify-content: space-evenly;
+    }
+
+    .rhum_liste > li{
+        padding-bottom: 2%;
     }
 }
