@@ -89,7 +89,7 @@ body{
     border-style: solid;
     border-color: black;
     position: relative;
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
     padding-right: 2%;
     padding-left: 2%;
@@ -106,17 +106,8 @@ body{
 
 .ingredient{
     font-size: 15px;
-    flex-direction: row;  
-    flex-wrap: nowrap;   
-    list-style: none;
     margin-top: 2%;
-}
-.descript{
-    flex-direction: row;  
-    flex-wrap: nowrap;  
-    left: 30%;
-    top: 10%; 
-    text-align: center;
+    text-align: left;
 }
 
 .preparation{

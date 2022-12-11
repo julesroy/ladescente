@@ -71,10 +71,14 @@ nav > a{
 
 body > .partie_classements{
     text-align: center;
-    list-style-position: inside;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+ol{
+    display: inline-block;
+    text-align: left;
 }
 
 h5 > a{ /*couleur du lien redirigeant vers drinks international*/
