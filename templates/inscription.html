@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/compte.css">
+    <link rel="icon" href="../img/logo2.webp">
+    <title>Mon compte</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">La descente</a>
+        <a href="connexion.html">Compte</a>
+    </header>
+    <br>
+    <nav>
+        <a href="accueil_presentation.html" class="accueil">Accueil</a>
+        <a href="recettes.html" class="recettes">Recettes et conseils</a>
+        <a href="decouvertes.html" class="decouverte">Découverte</a>
+        <a href="classements.html" class="classements">Classements</a>
+        <a href="newsletter.html" class="newsletter">Newsletter</a>
+        <a href="a_propos.html" class="a_propos">A propos</a>
+    </nav>
+    <br>
+    <form class="formLetter" method="post" action="#">
+        <fieldset >  <!-- la balise fieldset peut être utilisé pour regrouper un ensemble de champs -->
+            <legend>Creer Votre Compte</legend>
+            
+            <label>Genre:</label>
+            <input type="radio" name="genre" id="mme" required="required">  <!-- "name" doit avoir la même valeur pour UN ENSEMBLE d'input de type radio -->
+            <label for="mme">Madame</label>
+            <input type="radio" name="genre" id="mr" required="required"> <!-- la valeur de l'attribut "for" de la balise label et le "id" de la balise de l'input associé doit être la même -->
+            <label for="mr">Monsieur</label>
+            
+            <br><br> <!-- La balise br sert à effectuer un retour à la ligne-->
+            
+            <label for="nom">Nom :</label >
+            <input type="text" name="nom" id="nom" placeholder="Votre nom" required="required">
+            <br><br>
+            
+            <label for="prenom">Prénom :</label >
+            <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required="required">
+            <br><br>
+            
+            <label for="courriel">Email : </label >
+            <input type="email" name="courriel" id="courriel" placeholder="nom.prenom@student.junia.com" required="required">
+            <br><br>
+            <label for="mdp">Mot de passe </label>
+            <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" required="required">
+            <br><br>
+            <label for="start">Date de naissance: </label>
+            <input type="date" id="start" name="trip-start" min="1910-01-01" max="2004-12-31" required="required">
+            <br><br>
+            <label class="point">J'accepte les conditions générales d'inscription : </label>
+            <input type="checkbox" name="..." required="required">
+            <br><br>
+            <button type="submit" class="signupbtn">S'inscrire</button>
+        </fieldset>
+    </form>
+</body>
+</html>

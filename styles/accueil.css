@@ -1,0 +1,89 @@
+/*Insertion de la police, ne pas modifier*/
+@font-face {
+  font-family: 'modernm';
+  src: url('../font/modern_m-webfont.woff2') format('woff2'),
+       url('../font/modern_m-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body /* règle la taille du texte */
+{
+    font-family: 'verdana';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texte
+{
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+
+.logo{
+  height: 30vh;
+  width: auto;
+}
+
+.droite
+{
+    display: none;
+}
+
+.bouton{
+  background-color: rgb(18, 18, 54);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+}
+
+.bouton:hover{
+  transition-duration: 2s;
+  background-color: rgb(56, 1, 1);
+}
+
+*{
+  font-family: 'modernm';
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (768px<=width){
+  /* ordinateur
+  */
+  body{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  .gauche{
+    position: relative;
+    flex: 1;
+  }
+
+  .texte{
+    font-size: 20px;
+  }
+
+  .droite{
+    display: inline;
+    height: 100vh;
+    width: auto;
+    margin-right: 0;
+  }
+}
