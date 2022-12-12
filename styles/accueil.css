@@ -58,7 +58,7 @@ a{
     color: white;
 }
 
-@media screen and (768px<=width){
+@media screen and (1200px<=width){
   /* ordinateur
   */
   body{
