@@ -118,6 +118,11 @@ fieldset{
     border-radius: 10px;
     padding: 1vw;
 }
+.cocktailnews{
+    position: absolute;
+    left: 77%;
+    bottom: 50%
+}
 
 @media only screen and (600px<=width) {
     /* tablette
@@ -158,6 +163,12 @@ fieldset{
     .formLetter{
         margin: 0%;
     }
+    .cocktailnews{
+        position: absolute;
+        left: 65%;
+        bottom: 40%;
+        height: 17%;
+    }
 }
 
 
@@ -184,4 +195,11 @@ fieldset{
     .formLetter #start{
         width: 7vw;
     }
+    .cocktailnews{
+        position: absolute;
+        left: 57%;
+        bottom: 50%;
+        height: 17%;
+    }
+
 }

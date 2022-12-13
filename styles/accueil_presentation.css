@@ -28,13 +28,13 @@ header{
 header > a{
     color: white;
     text-decoration: none;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);/*effet de flou derriere les liens de header*/
     -webkit-backdrop-filter: blur(5px);
     border-radius: 5px;
     padding: 5px;
 }
 
-nav{
+nav{/*placement des éléments de nav avec grid*/
     padding-left: 3%;
     padding-right: 3%;
     display: grid;
@@ -69,7 +69,7 @@ nav > a{
     position: relative; 
 }
 
-main{
+main{/*placement des éléments dans main avec grid*/
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 15vh;
@@ -93,7 +93,7 @@ main{
 
 .img1{
     grid-area: img1;
-    background-image: url(../img/logo2.webp);
+    background-image: url(../img/logo2.webp); /*insertion image header*/
     background-size: cover;
     background-position-y: center;
     height: 15vh;
@@ -138,6 +138,8 @@ main{
 @media only screen and (600px<=width) {
     /* tablette
     */
+
+    /*création de l'animation sous les liens de nav*/
     nav > a:hover::after{
         display: inline;
         content: '';
@@ -152,7 +154,7 @@ main{
         animation-timing-function: linear;
         animation-delay: 0s;
     }
-    
+    /*création de l'animation sous les liens de nav*/
     @keyframes survol{
         from{
             width: 0%;
@@ -171,12 +173,12 @@ main{
 @media only screen and (768px<=width) {
     /* ordinateur
     */
-    nav{
+    nav{/*changement de la disposition des éléments de nav avec flex*/
         display: flex;
         justify-content: space-evenly;
     }
 
-    main{
+    main{/*changement de la disposition des éléments de main avec grid*/
         display: grid;
         grid-template-rows: 30vh 30vh 30vh;
         grid-template-columns: 1fr 1fr;

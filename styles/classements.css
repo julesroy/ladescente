@@ -28,13 +28,13 @@ header{
 header > a{
     color: white;
     text-decoration: none;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);/*effet de flou derriere les liens de header*/
     -webkit-backdrop-filter: blur(5px);
     border-radius: 5px;
     padding: 5px;
 }
 
-nav{
+nav{/*placement des éléments de nav avec grid*/
     padding-left: 3%;
     padding-right: 3%;
     display: grid;
@@ -69,14 +69,14 @@ nav > a{
     position: relative; 
 }
 
-body > .partie_classements{
+body > .partie_classements{ /*placement des conteneurs avec flex en colonne*/
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-ol{
+ol{/*alignement des listes dans leur conteneur*/
     display: inline-block;
     text-align: left;
 }
@@ -94,8 +94,8 @@ h5 > a{ /*couleur du lien redirigeant vers drinks international*/
 }
 
 @media only screen and (600px<=width) {
-    /* tablette
-    */
+    /*tablette*/
+    /*création de l'animation sous les liens de nav*/
     nav > a:hover::after{
         display: inline;
         content: '';
@@ -110,7 +110,7 @@ h5 > a{ /*couleur du lien redirigeant vers drinks international*/
         animation-timing-function: linear;
         animation-delay: 0s;
     }
-    
+    /*création de l'animation sous les liens de nav*/
     @keyframes survol{
         from{
             width: 0%;
@@ -126,14 +126,13 @@ h5 > a{ /*couleur du lien redirigeant vers drinks international*/
     }
 
     .conteneur_classment{
-        width: 50%;
+        width: 50%;/*taille des cases contenant les classements*/
     }
 }
 
 @media only screen and (768px<=width) {
-    /* ordinateur
-    */
-    nav{
+    /*ordinateur*/
+    nav{/*changement de la disposition des éléments de nav avec flex*/
         display: flex;
         justify-content: space-evenly;
     }

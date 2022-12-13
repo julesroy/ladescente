@@ -28,13 +28,13 @@ header{
 header > a{
     color: white;
     text-decoration: none;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);/*effet de flou derriere les liens de header*/
     -webkit-backdrop-filter: blur(5px);
     border-radius: 5px;
     padding: 5px;
 }
 
-nav{
+nav{/*placement des éléments de nav avec grid*/
     padding-left: 3%;
     padding-right: 3%;
     display: grid;
@@ -69,7 +69,7 @@ nav > a{
     position: relative; 
 }
 
-.formLetter{
+.formLetter{/*disposition des elements dans le formulaire*/
     position: relative;
     display: flex;
     justify-content: center;
@@ -85,7 +85,7 @@ fieldset{
     border-radius: 10px;
     padding: 1vw;
 }
-
+/*ici, on définit la taille des différents éléments du formulaire*/
 .formLetter #prenom,#nom,#courriel,#start,#start{
     height: 2vw;
 }
@@ -98,7 +98,7 @@ fieldset{
 .formLetter #start{
     width: 7vw;
 }
-.signupbtn {
+.signupbtn {/*style du bouton*/
     background-color:black;
     color: white;
     padding: 0.4vh;
@@ -122,7 +122,7 @@ fieldset{
     min-height: 100%;
 }
 
-.btn{
+.btn{ /*disposition des éléments dans la partie bouton (pour connexion.html)*/
     display: flex;
     justify-content: space-evenly;
 }
@@ -142,8 +142,8 @@ fieldset{
 }
 
 @media only screen and (600px<=width) {
-    /* tablette
-    */
+    /*tablette*/
+    /*création de l'animation sous les liens de nav*/
     nav > a:hover::after{
         display: inline;
         content: '';
@@ -158,7 +158,7 @@ fieldset{
         animation-timing-function: linear;
         animation-delay: 0s;
     }
-    
+    /*création de l'animation sous les liens de nav*/
     @keyframes survol{
         from{
             width: 0%;
@@ -180,9 +180,8 @@ fieldset{
 }
 
 @media only screen and (768px<=width) {
-    /* ordinateur
-    */
-    nav{
+    /*ordinateur*/
+    nav{/*changement de la disposition des éléments de nav avec flex*/
         display: flex;
         justify-content: space-evenly;
     }
