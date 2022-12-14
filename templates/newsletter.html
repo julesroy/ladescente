@@ -23,15 +23,15 @@
         <a href="a_propos.html" class="a_propos">A propos</a>
     </nav>
     <br>
-    <form class="formLetter" method="post" action="#">
-        <fieldset>  <!-- la balise fieldset peut être utilisé pour regrouper un ensemble de champs -->
+    <form class="formLetter" method="post" action="#"> <!--"On crée un formulaire" -->
+        <fieldset>  
             <legend class="legende">Vos informations</legend>
                 <label>Genre:</label>
-                    <input type="radio" name="genre" id="mme" required="required">  <!-- "name" doit avoir la même valeur pour UN ENSEMBLE d'input de type radio -->
+                    <input type="radio" name="genre" id="mme" required="required"> <!--"On ajoute required"required" afin de rendre obligatoire cette section du commentaire"-->
                 <label for="mme">Madame</label>
-                    <input type="radio" name="genre" id="mr" required="required"> <!-- la valeur de l'attribut "for" de la balise label et le "id" de la balise de l'input associé doit être la même -->
+                    <input type="radio" name="genre" id="mr" required="required">
                 <label for="mr">Monsieur</label>
-                <br><br> <!-- La balise br sert à effectuer un retour à la ligne-->
+                <br><br>
                 <label for="nom">Nom :</label >
                     <input type="text" name="nom" id="nom" placeholder="Votre nom" required="required">
                 <br><br>
@@ -48,7 +48,7 @@
                     <input type="checkbox" required="required">
                 <br><br>
                 <button type="submit" class="signupbtn">S'inscrire</button>
-                <img src="../img/ctlnewsletter.gif" alt="cocktail" class="cocktailnews">
+                <img src="../img/ctlnewsletter.gif" alt="cocktail" class="cocktailnews"><!--"On ajoute une image afin de remplir un petit peu"-->
         </fieldset>
     </form>
     <main>

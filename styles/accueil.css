@@ -47,6 +47,10 @@ a{
     color: white;
 }
 
+.warning{
+  font-size: 15px;
+}
+
 @media screen and (1200px<=width){
   /* ordinateur*/
   body{

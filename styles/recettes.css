@@ -126,7 +126,7 @@ body{
 }
 
 .img{
-    width:80%;
+    width:50%;
     height: auto;
 }
 
@@ -180,7 +180,7 @@ body{
 
     .img{
         height: auto;
-        width: 70%;
+        width: 40%;
     }
 }
 

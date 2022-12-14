@@ -69,7 +69,7 @@ nav > a{
     position: relative; 
 }
 
-.formLetter{
+.formLetter{ /*Mise en forme du formulaire d'inscription à la newsletter*/
     position: relative;
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@ nav > a{
     margin-left: 5%;
     margin-right: 5%;
 }
-.signupbtn {
+.signupbtn { /*Mise en forme du bouton d'inscription*/
     background-color:black;
     color: white;
     position: relative;
@@ -98,7 +98,7 @@ nav > a{
     position: relative;
     left: 35%;
 }
-.background{
+.background{ /*Mise en forme du fond d'écran*/
     position: fixed;
     right: 0;
     bottom: 0;
@@ -118,7 +118,7 @@ fieldset{
     border-radius: 10px;
     padding: 1vw;
 }
-.cocktailnews{
+.cocktailnews{ /*Mise en forme de l'image de remplissage dans le formulaire d'inscription*/
     position: absolute;
     left: 77%;
     bottom: 50%
